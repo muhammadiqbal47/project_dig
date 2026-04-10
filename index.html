@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard VA & CMS K/L</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000000, #0f9d58);
+    color: white;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    padding: 60px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.active {
+    display: block;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #a5ffcb;
+}
+
+p, li {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.nav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #00c853;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #00e676;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SLIDE 1 -->
+<div class="slide active">
+    <h1>Dashboard VA & CMS K/L</h1>
+    <h2>Transformasi Pengelolaan Dana Pemerintah</h2>
+    <p>
+        Pengembangan dashboard terintegrasi dan fitur Virtual Account (VA) 
+        untuk mendukung pengelolaan dana pelimpahan dari pusat ke daerah.
+    </p>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+    <h1>Latar Belakang</h1>
+    <ul>
+        <li>Dana Kementerian/Lembaga (K/L) masih dikelola secara fragmented</li>
+        <li>Belum terintegrasi antara VA, giro, dan tabungan</li>
+        <li>Monitoring dan transparansi masih terbatas</li>
+        <li>CMS belum mendukung transaksi antar bank</li>
+    </ul>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+    <h1>Permasalahan Utama</h1>
+    <ul>
+        <li>Tidak tersedia fitur transfer antar bank di CMS</li>
+        <li>Ketergantungan pada teller / channel manual</li>
+        <li>Tidak ada dashboard real-time</li>
+        <li>Rekonsiliasi masih manual</li>
+    </ul>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+    <h1>Peluang Strategis</h1>
+    <ul>
+        <li>Menjadi bank utama pengelola dana K/L di daerah</li>
+        <li>Peningkatan CASA</li>
+        <li>Peningkatan fee based income</li>
+        <li>Mendukung digitalisasi pemerintah</li>
+    </ul>
+</div>
+
+<!-- SLIDE 5 -->
+<div class="slide">
+    <h1>Landasan Regulasi</h1>
+    <ul>
+        <li>POJK Produk & Aktivitas Bank</li>
+        <li>Regulasi Sistem Pembayaran (BI-FAST, SKNBI, RTGS)</li>
+        <li>POJK Perlindungan Konsumen</li>
+        <li>Regulasi Pengelolaan Keuangan Negara</li>
+    </ul>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide">
+    <h1>Tujuan Pengembangan</h1>
+    <ul>
+        <li>Membangun dashboard terintegrasi K/L</li>
+        <li>Optimalisasi VA sebagai source of fund</li>
+        <li>Pengembangan CMS full transaction</li>
+        <li>Meningkatkan transparansi & efisiensi</li>
+    </ul>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide">
+    <h1>Arsitektur Solusi</h1>
+    <ul>
+        <li>Channel: CMS berbasis web</li>
+        <li>Middleware: VA, Transfer Engine, Rule Engine</li>
+        <li>Core Banking Integration</li>
+        <li>Integrasi BI & Sistem Pemerintah</li>
+    </ul>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide">
+    <h1>Fitur Utama</h1>
+    <ul>
+        <li>Dashboard saldo & transaksi</li>
+        <li>Virtual Account per program</li>
+        <li>Transfer internal & antar bank</li>
+        <li>Approval berjenjang</li>
+    </ul>
+</div>
+
+<!-- SLIDE 9 -->
+<div class="slide">
+    <h1>Transfer Antar Bank (Critical Feature)</h1>
+    <ul>
+        <li>Integrasi BI-FAST, SKNBI, RTGS</li>
+        <li>Real-time & batch processing</li>
+        <li>Limit & whitelist rekening</li>
+        <li>Multi-level approval</li>
+    </ul>
+</div>
+
+<!-- SLIDE 10 -->
+<div class="slide">
+    <h1>Flow End-to-End</h1>
+    <ul>
+        <li>Dana masuk ke VA</li>
+        <li>Terhubung ke rekening induk</li>
+        <li>User akses CMS</li>
+        <li>Transaksi & approval</li>
+        <li>Eksekusi ke BI system</li>
+        <li>Monitoring & reporting</li>
+    </ul>
+</div>
+
+<!-- SLIDE 11 -->
+<div class="slide">
+    <h1>Perizinan OJK</h1>
+    <ul>
+        <li>Kategori: Produk / Aktivitas Baru</li>
+        <li>Wajib risk assessment</li>
+        <li>Dokumentasi & pengajuan</li>
+        <li>UAT & pilot sebelum go live</li>
+    </ul>
+</div>
+
+<!-- SLIDE 12 -->
+<div class="slide">
+    <h1>Strategi Implementasi</h1>
+    <ul>
+        <li>Phase 1: VA & Dashboard</li>
+        <li>Phase 2: Rule & Rekonsiliasi</li>
+        <li>Phase 3: Interbank Transfer</li>
+        <li>Phase 4: Integrasi Ekosistem</li>
+    </ul>
+</div>
+
+<!-- SLIDE 13 -->
+<div class="slide">
+    <h1>Nilai Tambah</h1>
+    <ul>
+        <li>Peningkatan CASA</li>
+        <li>Fee based income</li>
+        <li>Digitalisasi layanan pemerintah</li>
+        <li>Competitive advantage</li>
+    </ul>
+</div>
+
+<!-- SLIDE 14 -->
+<div class="slide">
+    <h1>Kesimpulan</h1>
+    <p>
+        Pengembangan dashboard VA & CMS K/L dengan fitur transfer antar bank 
+        merupakan langkah strategis untuk meningkatkan efisiensi, transparansi, 
+        dan daya saing Bank Aceh.
+    </p>
+</div>
+
+<div class="nav">
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
+</div>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) slide.classList.add("active");
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+</script>
+
+</body>
+</html>
